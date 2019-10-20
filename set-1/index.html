@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Login</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<nav>
+		<div class="navbar text-light">
+			<h1>B-YOU</h1><br>
+		</div>
+	</nav>
+
+	<div class="set timer">
+		<h4>Aptitude Exam Set 1</h4>
+		<h3><span class="hours">00</span>:<span class="minutes">20</span>:<span class="seconds">00</span></h3>
+	</div>
+
+	<div class="container instruction-container">
+		<div class="instruction">
+			<span class="instruct"><h1>Instuctions</h1></span>
+			<ol>
+				<li>Quiz based on <b>Time and Distance, Work and Time, Ratio and Proportion</b>.</li>
+				<li>Time limit is <b>20 minutes</b> can be seen at top left corner.</li>
+				<li>Every question contains equal <b>10 points</b>.</li>
+				<li>Total 10 Questions are there (All with 4 options)</li>
+				<li>For every correct answer +10 point will be awarded</li>
+				<li>No negative marking</li>
+				<li><b>Once selected Option can't be changed, so think and select after 100% sure.</b></li>
+			</ol>
+			<div class="text-center">
+				<button class="btn btn-color start">Start</button>
+			</div>
+			
+		</div>
+	</div>
+	<div class="container main-container">
+		<div class="q-type">Choose the correct answer</div>
+		<hr>
+		<div class="row">
+			<div class="col-6 q-field">
+				<div class="q-num"><span>Q.</span><span class="q-number"></span></div>	
+				<div class="question"></div>
+			</div>
+			<div class="col-6 option fill">
+				<div class="button">
+					<button class="btn form-control btn-color o1 o">Option 1</button>
+					<button class="btn form-control btn-color o2 o">Option 2</button>
+					<button class="btn form-control btn-color o3 o">Option 3</button>
+					<button class="btn form-control btn-color o4 o">Option 4</button>
+				</div>
+				<div class="input">
+					<input class="form-control in" type="text" placeholder="type your answer here">
+					<button class="btn form-control btn-color o in">Next</button>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container score-container">
+		<div class="score">0</div>
+		<div class="solution">0</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

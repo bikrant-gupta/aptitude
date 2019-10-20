@@ -1,0 +1,91 @@
+nav{
+	background-color: #002;
+	padding: 15px;
+}
+body{
+	background-color:#002 !important;
+}
+ .set{
+ 	background-color: rgb(0,255,0);
+ 	padding: 10px;
+ 	box-shadow: 0px 20px 20px 20px rgb(0,255,0);
+ }
+
+ .main-container{
+ 	padding: 15px;
+ 	margin: 30px 10px 30px 10px;
+ 	background-color: #fff; 
+ 	border:1px solid white;
+ 	border-radius: 10px;
+ 	font-size: 20px;
+ 	display: none;
+ }
+
+ .button .btn-color{
+ 	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+ }
+ .button .btn-color:focus{
+ 	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+ }
+.instruction .btn-color{
+	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+
+}
+ .input .in{
+ 	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+ }
+ .score-container{
+ 	display: none;
+ 	margin: 30px 10px 30px 10px;
+ 	background-color: #fff !important; 
+ 	border:1px solid white;
+ 	border-radius: 10px;
+ 	font-size: 20px;
+ 	color: #0af;
+
+ }
+
+.instruct{
+	text-align: center;
+}
+ .instruction-container{
+ 	/*display: none;*/
+ 	margin: 30px 10px 30px 10px;
+ 	background-color: #fff !important; 
+ 	border:1px solid white;
+ 	border-radius: 10px;
+ 	font-size: 20px;
+ 	color: #002;
+
+ }
+
+
+ .input .btn-color{
+ 	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+ }
+ .input .btn-color:focus{
+ 	background-color: #002;	
+ 	margin-top: 8px;
+ 	margin-bottom: 8px;
+ 	color: #0af;
+ }
+
+ .input{
+ 	display: none;
+ }
+
