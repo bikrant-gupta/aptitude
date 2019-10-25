@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 			finish();
 			}
-		},1)
+		},1000)
 
 	}
 	$('.start').click(function(){
