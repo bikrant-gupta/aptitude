@@ -21,6 +21,7 @@ $(document).ready(function(){
 			// var color="rgb("+col.toString()+",255,0)"
 			if(col<255){
 				var color="rgb("+col.toString()+",255,0)"
+				// console.log(color);
 				var sh = "0px 20px 20px 20px "+color;
 				$('.set').css("background",color)
 				$('.set').css("box-shadow",sh)
@@ -28,6 +29,7 @@ $(document).ready(function(){
 			else{
 				col=510-col;
 				var color="rgb(255,"+col.toString()+",0)"
+				// console.log(color);
 				var sh = "0px 20px 20px 20px "+color;
 				$('.set').css("background",color)
 				$('.set').css("box-shadow",sh)
@@ -45,23 +47,25 @@ $(document).ready(function(){
 				timer_second();
 			}
 			if((m===0 && i==0) ){
-			$('.main-container').hide();
-			time_s=60-i;
-			time_m=29-m;
-			for(var t1=0;t1<10;t1++){
-				if(main_answer[t1] === user_answer[t1]){
-					score+=10;
-				}
+			// $('.main-container').hide();
+			// time_s=60-i;
+			// time_m=19-m;
+			// for(var t1=0;t1<10;t1++){
+			// 	if(main_answer[t1] === user_answer[t1]){
+			// 		score+=10;
+			// 	}
+			// }
+			// text="<div>Your Total Score is:<b> "+score.toString()+"</b></div>";
+			// time=text+"<div>Finished After "+time_m.toString()+" minutes "+time_s+" seconds</div>";
+			// $('.score').html(time);
+			// $('.score-container').slideDown({duration:300,queue:false});
+			// // console.log(user_answer,main_answer);
+			// i=0;
+			// m=0;
+
+			finish();
 			}
-			text="<div>Your Total Score is:<b> "+score.toString()+"</b></div>";
-			time=text+"<div>Finished After "+time_m.toString()+" minutes "+time_s+" seconds</div>";
-			$('.score').html(time);
-			$('.score-container').slideDown({duration:300,queue:false});
-			// console.log(user_answer,main_answer);
-			i=0;
-			m=0;
-		}
-		},1000)
+		},1)
 
 	}
 	$('.start').click(function(){
@@ -313,7 +317,7 @@ $(document).ready(function(){
 				3:"19",
 				4:"20"
 				},
-			3:"o4"
+			3:"o2"
 			},
 		
 		24:{
@@ -407,35 +411,7 @@ $(document).ready(function(){
 			$('.o4').html(questions[li[t]][2][4]);
 		}
 		if(qno==11 ){
-			setTimeout(function(){
-				$('.main-container').hide();
-				time_s=60-i;
-				time_m=29-m;
-				for(var t1=0;t1<10;t1++){
-					if(main_answer[t1] === user_answer[t1]){
-						score+=10;
-					}
-				}
-				text="<div>Your Total Score is:<b> "+score.toString()+"</b></div>";
-				time=text+"<div>Finished After "+time_m.toString()+" minutes "+time_s+" seconds</div>";
-				$('.score').html(time);
-				$('.score-container').slideDown({duration:300,queue:false});
-				var sol = "";
-				// console.log(user_answer); 
-				for(var t1=0;t1<10;t1++){
-					var ans = parseInt(questions[li[t1]][3].charAt(1));
-					var user_ans = parseInt(user_answer[t1].charAt(1));
-					// console.log(user_answer[t1]);
-					// console.log(questions[li[t1]][2]);
-					sol+="<div><b>"+questions[li[t1]][1]+"</b></div>"+"<div>Correct Answer:"+questions[li[t1]][2][ans]+"</div><div>Your Answer:"+questions[li[t1]][2][user_ans]+"</div><hr><br>";
-				}
-				$('.solution').html(sol);
-
-
-				// console.log(user_answer,main_answer);
-				i=0;
-				m=0;
-			},500)
+			
 			
 		}
 		else{
@@ -460,5 +436,49 @@ $(document).ready(function(){
 	$('.o4').click(function(){
 		user_answer.push("o4");
 	})
+
+	function finish(){
+		console.log("Hiii");
+		setTimeout(function(){
+				$('.main-container').hide();
+				time_s=60-i;
+				time_m=19-m;
+				for(var t1=0;t1<10;t1++){
+					if(main_answer[t1] === user_answer[t1]){
+						score+=10;
+					}
+				}
+				text="<div>Your Total Score is:<b> "+score.toString()+"</b></div>";
+				time=text+"<div>Finished After "+time_m.toString()+" minutes "+time_s+" seconds</div>";
+				$('.score').html(time);
+				$('.score-container').slideDown({duration:300,queue:false});
+				var sol = "<hr>";
+				// console.log(user_answer); 
+				for(var t1=0;t1<10;t1++){
+					console.log(t1,li);
+					var ans = parseInt(questions[li[t1]][3].charAt(1));
+					sol+="<div><b>"+questions[li[t1]][1]+"</b></div>"+"<div>Correct Answer:"+questions[li[t1]][2][ans]+"</div><div>Your Answer:";
+					var user_ans;
+					if(user_answer[t1]){
+						user_ans = parseInt(user_answer[t1].charAt(1));
+						sol+=questions[li[t1]][2][user_ans]+"</div><hr><br>";
+					}
+					else{
+						sol+="<b>NOT ANSWERED</b></div><hr><br>";
+					}
+					console.log(user_ans);
+					
+					// console.log(user_answer[t1]);
+					// console.log(questions[li[t1]][2]);
+					
+				}
+				$('.solution').html(sol);
+
+
+				// console.log(user_answer,main_answer);
+				i=0;
+				m=0;
+			},500)
+	}
 
 })
