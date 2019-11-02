@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Login</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<nav>
+		<div class="">
+			<div class="row">
+				<div class="col-5 col-sm-7 col-md-9">
+					<div class="navbar text-light">
+						<h1>B-YOU</h1><br>
+						<h4>Aptitude Exam Set 2</h4>
+					</div>
+				</div>
+				<div class="col-3 col-sm-2 col-md-1">
+					<div class="time">
+						<div class="th">
+							<span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>
+						</div>
+						
+					</div>
+				</div>
+				<div class="set timer col-4 col-sm-3 col-md-2">
+					<button class="btn form-control o-end">End Exam</button>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</nav>
+
+	
+
+	<div class="instruction-container">
+		<div class="instruction">
+			<span class="instruct"><h1>Instuctions</h1></span>
+			<div class="ol-instruct"></div>
+			
+			<div class="text-center">
+				<button class="btn btn-color start">Start</button>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<!-- ----------------------------------------------------------------------------------- -->
+
+	<div class="number-container col-12 col-sm-3 float-left">
+		<div class="row"></div>
+	</div>
+
+
+	<div class="main-container col-12 col-sm-9 float-left">
+		<button class="btn form-control col-3 col-md-2 col-lg-1 o-skip">Next/Skip</button>
+		<div class="q-type">Choose the correct answer</div>
+		<hr>
+		<div class="row">
+			<div class="col-12 col-md-6 q-field">
+				<div class="q-num"><span>Q.</span><span class="q-number"></span><button class="btn form-control col-4 o-review">Mark for review</button></div>	
+				<div class="question"></div>
+			</div>
+			<div class="col-12 col-md-6 option fill">
+				<div class="button">
+					<button class="btn form-control btn-color o1 o">Option 1</button>
+					<button class="btn form-control btn-color o2 o">Option 2</button>
+					<button class="btn form-control btn-color o3 o">Option 3</button>
+					<button class="btn form-control btn-color o4 o">Option 4</button>
+					
+					
+				</div>
+
+
+
+				<div class="input">
+					<input class="form-control in" type="text" placeholder="type your answer here">
+					<button class="btn form-control btn-color o in">Next</button>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+	
+	<!-- ---------------------------------------------------- ------------------------------->
+
+
+
+
+	<div class="score-container">
+		<div class="score">0</div>
+		<div class="solution"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
