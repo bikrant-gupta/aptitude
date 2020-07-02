@@ -5,10 +5,10 @@ and shows Correct answer after test
 
 go to 
 
-https://bikrant1999.github.io/aptitude/set1 
+https://bikrant1999.github.io/aptitude/set-1 
 or
 
-https://bikrant1999.github.io/aptitude/set2
+https://bikrant1999.github.io/aptitude/set-2
 
 to view output
 
@@ -25,3 +25,5 @@ Feature:-
 4. Timer is with colour transform from green to red
 
 5. Score will be shown after test and correct answer too.
+
+6. website is responsive
