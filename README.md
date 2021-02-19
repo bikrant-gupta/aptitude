@@ -5,10 +5,10 @@ and shows Correct answer after test
 
 go to 
 
-https://bikrant1999.github.io/aptitude/set-1 
+https://bikrant-gupta.github.io/aptitude/set-1 
 or
 
-https://bikrant1999.github.io/aptitude/set-2
+https://bikrant-gupta.github.io/aptitude/set-2
 
 to view output
 
